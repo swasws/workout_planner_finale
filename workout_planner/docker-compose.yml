@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:17
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1h8u6f0q
+      POSTGRES_DB: peakplan
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"  # Внешний порт 5433 направлен на внутренний 5432
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DEBUG: "1"
+      DB_NAME: peakplan
+      DB_USER: postgres
+      DB_PASSWORD: 1h8u6f0q
+      DB_HOST: db
+      DB_PORT: 5432  # Важно: внутри контейнера порт остаётся 5432
+
+volumes:
+  postgres_data:

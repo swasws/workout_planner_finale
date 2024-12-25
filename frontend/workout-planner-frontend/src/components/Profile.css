@@ -1,0 +1,53 @@
+/* Контейнер профиля */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #1b1b2f, #252546);
+  color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+}
+
+/* Карточка профиля */
+.profile-card {
+  background: #2b2b3e;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Заголовок профиля */
+.profile-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Аватар */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Текст */
+.profile-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #d1d1d1;
+}
+
+/* Выделение жирного текста */
+.profile-card strong {
+  color: #fff;
+}
+
+

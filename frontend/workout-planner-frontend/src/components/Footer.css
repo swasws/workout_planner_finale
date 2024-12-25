@@ -1,0 +1,66 @@
+/* Footer.css */
+
+/* Основной контейнер футера */
+.footer {
+  background: linear-gradient(120deg, #1b1b2f, #252546);
+  color: #f0f0f0;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 2px solid #28a745;
+}
+
+/* Контент футера */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Секция футера */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Ссылки на соцсети */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-links a {
+  color: #28a745;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: #1e90ff;
+}
+
+/* Нижняя часть футера */
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #d1d1d1;
+}

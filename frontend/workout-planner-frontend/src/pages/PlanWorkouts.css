@@ -1,0 +1,88 @@
+/* Основной контейнер */
+.plan-workouts-container {
+  background: linear-gradient(120deg, #1b1b2f, #252546);
+  min-height: 100vh;
+  color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Заголовок */
+.plan-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Форма */
+.plan-form {
+  background: #2b2b3e;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 500px;
+  color: #f0f0f0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.form-input,
+.form-select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #3b3b5e;
+  color: #f0f0f0;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border: 2px solid #28a745;
+}
+
+.form-submit {
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.form-submit:hover {
+  background: #1e7e34;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .plan-form {
+    padding: 20px 15px;
+  }
+
+  .plan-title {
+    font-size: 2rem;
+  }
+}

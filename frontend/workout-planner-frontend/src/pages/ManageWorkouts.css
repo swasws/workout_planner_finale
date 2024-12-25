@@ -1,0 +1,122 @@
+.manage-workouts-container {
+  background: linear-gradient(120deg, #1b1b2f, #252546);
+  min-height: 100vh;
+  color: #f0f0f0;
+  font-family: "Arial", sans-serif;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manage-workouts-title {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.manage-workouts-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.workout-card-mg{
+  background: linear-gradient(120deg, #2a2a40, #3b3b5e);
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  color: #e5e5e5;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  width: 300px;
+}
+
+.workout-card-mg:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 1);
+}
+
+.workout-card-mg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #28a745;
+  border-radius: 12px 12px 0 0;
+}
+
+.workout-title {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.workout-description {
+  margin-bottom: 15px;
+}
+
+.workout-details {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+
+.edit-button {
+  background-color: #ffc107;
+  color: #fff;
+
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: #fff;
+
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+  opacity: 0.9;
+
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Добавляет отступ между кнопками */
+}
